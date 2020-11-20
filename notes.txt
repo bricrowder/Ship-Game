@@ -1,0 +1,365 @@
+
+        {
+            "name":"Wall",
+            "hits":2,
+            "angularspeed":0,
+            "speed":0,
+            "movement":"wall",
+            "bullet":null,
+            "firerate":0,
+            "energy":4,
+            "coin":4,
+            "points":1000,
+            "colour":[0,0,1,0],
+            "texture":"StandardEnemy",
+            "explosion":"StandardEnemy",
+            "engine":null,
+            "boss":false            
+        }
+
+
+
+       ,
+            {
+                "name":"track",
+                "speed":0.78,
+                "movement":"circular",
+                "size":16,
+                "life":5,
+                "damage":1,
+                "texture":"StandardShot",
+                "trail":"StandardTrail",
+                "colour":[255,255,0,255]
+            },
+            {
+                "name":"explody",
+                "speed":750,
+                "movement":"linear",
+                "size":16,
+                "life":5,
+                "damage":0,
+                "texture":"StandardShot",
+                "trail":"StandardTrail",
+                "colour":[255,0,255,255]
+            },
+            {
+                "name":"explosion",
+                "speed":0,
+                "movement":"explosion",
+                "size":256,
+                "life":1,
+                "damage":3,
+                "texture":null,
+                "trail":"explosion",
+                "colour":[0,255,255,255]
+            }
+
+
+,
+    "wavecontroller":{
+        "canvas":[
+            {
+                "name":"electrogamewall",
+                "height":64,
+                "updatetype":"stopmotion",
+                "waves":[
+                    {
+                        "index":1,
+                        "offset":24,
+                        "colour":[255,255,255,255]
+                    },
+                    {
+                        "index":2,
+                        "offset":32,
+                        "colour":[224,224,224,255]
+                    },
+                    {
+                        "index":3,
+                        "offset":40,
+                        "colour":[192,192,192,255]
+                    }                                        
+                ]
+            },
+            {
+                "name":"plasmagamewall",
+                "height":64,
+                "updatetype":"constant",
+                "waves":[
+                    {
+                        "index":4,
+                        "offset":32,
+                        "colour":[255,255,255,255]
+                    },
+                    {
+                        "index":5,
+                        "offset":32,
+                        "colour":[224,224,224,255]
+                    },
+                    {
+                        "index":6,
+                        "offset":32,
+                        "colour":[192,192,192,255]
+                    }                                        
+                ]
+            },            
+            {
+                "name":"electroenemywall",
+                "height":32,
+                "updatetype":"stopmotion",
+                "waves":[
+                    {
+                        "index":2,
+                        "offset":16,
+                        "colour":[255,255,255,255]
+                    },
+                    {
+                        "index":1,
+                        "offset":16,
+                        "colour":[192,192,192,255]
+                    }                                        
+                                                            
+                ]
+            },            
+            {
+                "name":"plasmaenemywall",
+                "height":32,
+                "updatetype":"constant",
+                "waves":[
+                    {
+                        "index":4,
+                        "offset":16,
+                        "colour":[192,192,192,255]
+                    }                                        
+                ]
+            }            
+        ],
+        "waves":[
+            {
+                "magmax":20,
+                "magspeed":40,
+                "xintensity":25,
+                "yintensity":5
+            },{
+                "magmax":30,
+                "magspeed":30,
+                "xintensity":50,
+                "yintensity":5
+            },{
+                "magmax":25,
+                "magspeed":50,
+                "xintensity":35,
+                "yintensity":3
+            },{
+                "magmax":20,
+                "magspeed":40,
+                "xintensity":20,
+                "yintensity":0.45
+            },{
+                "magmax":20,
+                "magspeed":30,
+                "xintensity":20,
+                "yintensity":0.45
+            },{
+                "magmax":30,
+                "magspeed":30,
+                "xintensity":20,
+                "yintensity":0.3
+            }
+        ]
+    },
+
+
+
+            {
+            "name":"Stryker",
+            "hp":1,
+            "angularspeed":0.15,
+            "speed":0,
+            "movement":"circular",
+            "bullet":"track",
+            "firerate":0.5,
+            "points":1000,
+            "colour":[1,0,0,0],
+            "homingradius":0,
+            "explosionradius":0,
+            "texture":"StandardEnemy",
+            "explosion":"StandardEnemy",
+            "engine":"engine"
+        },
+        {
+            "name":"Patroller",
+            "hp":1,
+            "angularspeed":0,
+            "speed":250,
+            "movement":"backandforth",
+            "bullet":"standard",
+            "firerate":1,
+            "points":1000,
+            "colour":[1,1,0,0],
+            "homingradius":0,
+            "explosionradius":0,
+            "texture":"StandardEnemy",
+            "explosion":"StandardEnemy",
+            "engine":"engine"
+        },
+        {
+            "name":"Protector",
+            "hp":2,
+            "angularspeed":0,
+            "speed":0,
+            "movement":"stationary",
+            "bullet":"standard",
+            "firerate":1,
+            "points":1000,
+            "colour":[1,0,1,0],
+            "homingradius":0,
+            "explosionradius":0,
+            "texture":"StandardEnemy",
+            "explosion":"StandardEnemy",
+            "engine":"engine"
+        },
+
+
+,        
+        {
+            "name":"Miner",
+            "hp":2,
+            "angularspeed":0,
+            "speed":100,
+            "movement":"homing",
+            "bullet":"explosion",
+            "firerate":0,
+            "points":1000,
+            "colour":[1,0,1,0],
+            "homingradius":512,
+            "explosionradius":256,
+            "texture":"StandardEnemy",
+            "explosion":"StandardEnemy",
+            "engine":"engine"
+        },
+        {
+            "name":"Confuser",
+            "hp":2,
+            "angularspeed":0.15,
+            "speed":500,
+            "movement":"zigzag",
+            "bullet":"standard",
+            "firerate":0,
+            "points":1000,
+            "colour":[1,0,1,0],
+            "homingradius":0,
+            "explosionradius":0,
+            "texture":"StandardEnemy",
+            "explosion":"StandardEnemy",
+            "engine":"engine"
+        }                     
+
+
+
+    -- move the enemy
+    -- if self.movement == "stationary" then
+    --     -- update shooting angle
+    --     local px, py = player:getPosition()
+    --     self.shootangle = math.atan2(py - self.position.y, px - self.position.x)
+    -- elseif self.movement == "homing" then     
+    --     local px, py = player:getPosition()
+    --     -- calc distance between two
+    --     local dx = math.abs(px-self.position.x)
+    --     local dy = math.abs(py-self.position.y)
+    --     local d = math.sqrt(dx*dx + dy*dy)
+    --     -- if it is the closest, record the index and position
+    --     if d < self.homingradius then
+    --         -- calc destination angle
+    --         local target = math.atan2(py-self.position.y, px-self.position.x)
+    --         -- normalize target angle
+    --         if target < 0 then target = target + math.pi*2 end
+    --         -- get angle differenge
+    --         local difference = target - self.shootangle
+    --         -- normalize difference
+    --         if difference < 0 then difference = difference + math.pi*2 end
+    --         -- figure out which way the bullet should turn
+    --         local direction = 1
+    --         if difference > math.pi then
+    --             difference = math.pi*2 - difference
+    --             direction = -1
+    --         end
+    --         -- adjust angle if we need to...
+    --         if difference > 0 then
+    --             difference = difference - math.pi/2*dt
+    --             local newangle = self.shootangle + math.pi/2*dt * direction
+    --             if difference < 0 then
+    --                 newangle = newangle + difference
+    --             end
+    --             if newangle > math.pi*2 then newangle = newangle - math.pi*2 end
+    --             if newangle < 0 then newangle = newangle + math.pi*2 end
+    --             self.shootangle = newangle
+    --         end
+    --         -- calculate new x,y
+    --         self.position.x = self.position.x + math.cos(self.shootangle) * self.speed * dt
+    --         self.position.y = self.position.y + math.sin(self.shootangle) * self.speed * dt
+    --     end
+    --     -- also check for explosion radius!
+    --     if d < self.explosionradius then
+    --         bulletctlr:add(bullet_cls.new(self.bullet, self.position.x, self.position.y, 0, "enemy"))
+    --         self.removemine = true
+    --     end
+    -- elseif self.movement == "backandforth" then
+    --     -- move the enemies along the angle
+    --     self.mag = self.mag + self.speed * dt * self.magdir[1]
+    --     -- get the rings
+    --     local inner, outer = gamectlr:getRings()
+    --     -- clamp the enemy to the inner/outer rings and change its direction on a ring hit
+    --     if self.mag > outer - self.size then
+    --         self.mag = outer - self.size
+    --         self.magdir[1] = -1
+    --     elseif self.mag < inner + self.size then
+    --         self.mag = inner + self.size
+    --         self.magdir[1] = 1
+    --     end
+    --     -- move the enemy
+    --     self.position.x = math.cos(self.posangle) * self.mag
+    --     self.position.y = math.sin(self.posangle) * self.mag
+    -- elseif self.movement == "circular" then
+    --     -- update the position angle
+    --     self.posangle = self.posangle - self.angularspeed * dt
+    --     -- update the directional angle
+    --     self.shootangle = self.posangle - math.pi/2
+    --     -- calculate position
+    --     self.position.x = math.cos(self.posangle) * self.mag
+    --     self.position.y = math.sin(self.posangle) * self.mag
+    -- elseif self.movement == "zigzag" then
+    --     -- update the position angle
+    --     self.posangle = self.posangle - self.angularspeed * dt
+    --     -- update the directional angle
+    --     self.shootangle = self.posangle - math.pi/2
+    --     -- update the mag position
+    --     self.mag = self.mag + self.speed * dt * self.magdir[1]
+    --     -- get the rings
+    --     local inner, outer = gamectlr:getRings()
+    --     -- clamp the enemy to the inner/outer rings and change its direction on a ring hit
+    --     if self.mag > outer - self.size then
+    --         self.mag = outer - self.size
+    --         self.magdir[1] = -1
+    --     elseif self.mag < inner + self.size then
+    --         self.mag = inner + self.size
+    --         self.magdir[1] = 1
+    --     end
+    --     -- calculate position
+    --     self.position.x = math.cos(self.posangle) * self.mag
+    --     self.position.y = math.sin(self.posangle) * self.mag        
+    -- else
+
+    
+    -- for backandforth moving wall enemies - controls the direction of the movement - up to two walls...
+    e.magdir = {1,1}
+    -- homing enemy specific stuff - radius to explode    
+    e.explosionradius = config.enemies[e.index].explosionradius
+    -- if a mine should be removed
+    e.removemine = false
+
+
+
+
+
+    graphics ideas:
+

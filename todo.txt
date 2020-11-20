@@ -1,0 +1,21 @@
+New Features:
+Boss patterns
+Additional layers of planet randomization/effects
+Sound/Music
+Boost
+Add/Lose weapon "Burst" 
+Symbols for radar (atomic/skull)
+Boss zone graphics
+
+
+Polish/Change:
+UI
+Control Mapping
+Engine/Gun Pos
+Configify everything
+Viewport/Camera - too close?
+
+
+Bugs:
+Bosszone/Deadzone Wierdness
+KillAll()
