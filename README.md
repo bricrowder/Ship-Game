@@ -4,7 +4,7 @@
 
 Fly a ship around a planet protecting it from hazards.
 
-apologize up-front that the menu is a terrible unfinished mess!
+apologize up-front that it is a terrible unfinished mess! ;-)
 
 ## What this has
 - Can handle any 16x9 resolution (or any? I can't remember :( ), runs at a virtual 1920x1080 resolution and scales to whatever you put in, you can also change the virtual resolution to whatever you want, like something smaller
