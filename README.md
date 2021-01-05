@@ -9,7 +9,6 @@ apologize up-front that the menu is a terrible unfinished mess!
 ## What this has
 - planet generation, including regions and slices, using law of cosine
 - Play area rotates around the planet, with a day / night side, clouds and stars
-- 
 - keyboard/mouse controls (gamepad too I think, its been a while :)  )
 - a few different enemy types: stationary, orbit, sinwave orbit, and homing.  They all use the same sprite though, sorry for that too! :)
 - A few different bullet types including linear and homing
@@ -27,4 +26,3 @@ apologize up-front that the menu is a terrible unfinished mess!
 - menu back - esc
 
 ![screenshot](./screenshot1.png)
-
