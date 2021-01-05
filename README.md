@@ -7,12 +7,14 @@ Fly a ship around a planet protecting it from hazards.
 apologize up-front that the menu is a terrible unfinished mess!
 
 ## What this has
+- Can handle any 16x9 resolution (or any? I can't remember :( ), runs at a virtual 1920x1080 resolution and scales to whatever you put in, you can also change the virtual resolution to whatever you want, like something smaller
 - planet generation, including regions and slices, using law of cosine
-- Play area rotates around the planet, with a day / night side, clouds and stars
-- chromatic abbrassion shader for visual damage indicator
-- keyboard/mouse controls (gamepad too I think)
+- Play area rotates around the planet, with a day / night side, random-ish colour palette clouds and stars
+- Chromatic abbrassion shader for visual damage indicator
+- keyboard/mouse and gamepad controls
 - a few different enemy types: stationary, orbit, sinwave orbit, and homing.  They all use the same sprite though, sorry for that too! :)
 - A few different bullet types including linear and homing
+- Rotating minimap that is a small version of the planet and the enemy positions
 - Land at base, heal and upgrade weapons
 - Basic level progression (by killing enemies), a boss and change to next level -> doesn't do much but increment some numbers at this point
 
@@ -27,6 +29,11 @@ apologize up-front that the menu is a terrible unfinished mess!
 - Pause menu / menu back - esc
 - menu movement - wsad keys
 - menu Ok - space
+
+## Gamepad Controls:
+- Movement - left stick
+- Direction - right stick
+- I can't recall the rest, check out the code :)
 
 ![screenshot](./screenshot1.png)
 ![screenshot](./screenshot2.png)
