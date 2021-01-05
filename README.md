@@ -1,6 +1,6 @@
-# Space-Game
+## Ship Game
 
-Note: for [Love 0.10.2](https://github.com/love2d/love/releases/tag/0.10.2).  It uses 0-255 colour values.
+### Note: for [Love 0.10.2](https://github.com/love2d/love/releases/tag/0.10.2).  It uses 0-255 colour values.
 
 Fly a ship around a planet protecting it from hazards.
 
